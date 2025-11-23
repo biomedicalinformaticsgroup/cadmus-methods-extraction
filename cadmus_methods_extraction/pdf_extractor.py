@@ -10,12 +10,12 @@ from typing import Tuple, Optional
 import pandas as pd
 from papermage.recipes import CoreRecipe
 import json
-from cadmus.extract_methods.section_detection_rules import (
+from cadmus_methods_extraction.section_detection_rules import (
     is_start_of_materials_methods,
     is_end_of_materials_methods,
 )
-from cadmus.extract_methods.utils import setup_logger, ensure_dir
-from cadmus.extract_methods.plain_extractor import _extract_methods_from_txt
+from cadmus_methods_extraction.utils import setup_logger, ensure_dir
+from cadmus_methods_extraction.plain_extractor import _extract_methods_from_txt
 
 # Create a single, module‐wide PaperMage recipe instance
 _CORE_RECIPE = CoreRecipe()
